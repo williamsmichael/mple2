@@ -1,5 +1,3 @@
 # mple2
 
-This is a working version 2 of my portfolio website MPLE.
-
-[MPLE](http://mpleconsulting.com/)
+This is a working version 2 of my portfolio website [MPLE](http://mpleconsulting.com/).
