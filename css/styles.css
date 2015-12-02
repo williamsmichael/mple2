@@ -5,6 +5,12 @@
 .btn-group, .portfolio-btn {
 	margin-top: 20px;
 }
+img[alt~="Screenshot"] {
+	margin-top: 25px;
+}
+@media all and (max-width: 550px) {
+
+}
 
 /* ------------------------------------------------------------------resume */
 #name h1 {
