@@ -10,8 +10,11 @@
 #name h1 {
 	margin-bottom: 3px;
 }
+#name h2 {
+	margin-bottom: 15px;
+}
 #resume p {
-	line-height: 150%;
+	/* line-height: 135%; */
 }
 p.subDetails {
 	margin-top: 7.5px;
@@ -25,11 +28,11 @@ p.subDetails {
 	background-color: inherit;
 }
 @media all and (max-width: 480px) {
-	#resume h1, #resume h2 {
+	#resume h1 {
 		margin-bottom: 10px;
-		line-height: 110%;
+		line-height: 105%;
 	}
 	#resume h2 {
-		line-height: 115%;
+		line-height: 110%;
 	}
 }
