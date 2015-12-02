@@ -5,3 +5,12 @@
 .btn-group, .portfolio-btn {
 	margin-top: 20px;
 }
+
+/* ------------------------------------------------------------------resume */
+#resume-footer {
+	padding-top: 0;
+	padding-bottom: 25px;
+	font-size: 2em;
+	text-align: center;
+	background-color: inherit;
+}
