@@ -92,7 +92,7 @@ header + div p span {
 	text-align: center;
 	background-color: #eee;
 	display: none;
-	color: #bbb;
+	color: #333;
 }
 #inputField:focus {
   outline: none;
@@ -101,18 +101,22 @@ header + div p span {
 	placeholder: none;
 }
 ::-webkit-input-placeholder {
-   color: #ddd;
+   color: #ccc;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: #ddd;
+   color: #ccc;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #ddd;
+   color: #ccc;
 }
 :-ms-input-placeholder {
-   color: #ddd;
+   color: #ccc;
 }
 #buttonRestart {
 	display: none;
+}
+footer {
+	margin-top: 100px;
+	text-align: center;
 }
 
