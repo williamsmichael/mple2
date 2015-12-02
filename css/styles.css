@@ -7,10 +7,29 @@
 }
 
 /* ------------------------------------------------------------------resume */
+#name h1 {
+	margin-bottom: 3px;
+}
+#resume p {
+	line-height: 150%;
+}
+p.subDetails {
+	margin-top: 7.5px;
+}
 #resume-footer {
-	padding-top: 0;
+	border-top: 1px solid #dedede;
+	padding-top: 25px;
 	padding-bottom: 25px;
 	font-size: 2em;
 	text-align: center;
 	background-color: inherit;
+}
+@media all and (max-width: 480px) {
+	#resume h1, #resume h2 {
+		margin-bottom: 10px;
+		line-height: 110%;
+	}
+	#resume h2 {
+		line-height: 115%;
+	}
 }
