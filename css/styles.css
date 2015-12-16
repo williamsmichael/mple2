@@ -4,12 +4,45 @@
 }
 .btn-group, .portfolio-btn {
 	margin-top: 20px;
-}
+}#CC0000
 img[alt~="Screenshot"] {
 	margin-top: 25px;
 }
 @media all and (max-width: 550px) {
 
+}
+
+/* ------------------------------------------------------------------ribbon */
+.corner-ribbon{
+	width: 250px;
+	background: #e43;
+	position: absolute;
+	top: 25px;
+	left: -50px;
+	text-align: center;
+	line-height: 50px;
+	letter-spacing: 1px;
+	color: #fff;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	z-index: 1;
+}
+/* Custom styles */
+.corner-ribbon.sticky{
+ 	position: fixed;
+}
+.corner-ribbon.shadow{
+ 	box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+.corner-ribbon.top-right{
+	top: 91px;
+	right: -60px;
+	left: auto;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.corner-ribbon.green{
+    background: #3c8d0d;
 }
 
 /* ------------------------------------------------------------------resume */
