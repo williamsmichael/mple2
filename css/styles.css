@@ -13,7 +13,7 @@ img[alt~="Screenshot"] {
 }
 
 /* ------------------------------------------------------------------ribbon */
-.corner-ribbon{
+.corner-ribbon {
 	width: 250px;
 	background: #e43;
 	position: absolute;
@@ -28,10 +28,10 @@ img[alt~="Screenshot"] {
 	z-index: 1;
 }
 /* Custom styles */
-.corner-ribbon.sticky{
+.corner-ribbon.sticky {
  	position: fixed;
 }
-.corner-ribbon.shadow{
+.corner-ribbon.shadow {
  	box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
 .corner-ribbon.top-right{
@@ -41,7 +41,7 @@ img[alt~="Screenshot"] {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
-.corner-ribbon.green{
+.corner-ribbon.green {
     background: #3c8d0d;
 }
 
