@@ -44,6 +44,9 @@ img[alt~="Screenshot"] {
 .corner-ribbon.green {
     background: #339933;
 }
+.corner-ribbon.blue {
+	background: #6699CC;
+}
 
 /* ------------------------------------------------------------------resume */
 #name h1 {

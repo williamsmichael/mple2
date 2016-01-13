@@ -37,7 +37,7 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     /* background: url(../img/intro-bg.jpg) no-repeat center center; */
-    background-image: radial-gradient(#CC0000, #222);
+    background-image: radial-gradient(#336666, #222);
 }
 
 .intro-message {
@@ -131,7 +131,7 @@ h6 {
     color: #f8f8f8;
     /* background: url(../img/banner-bg.jpg) no-repeat center center; */
     /* background-size: cover; */
-    background-image: radial-gradient(circle at top left, #CC0000, #222);
+    background-image: radial-gradient(circle at top left, #336666, #222);
 }
 
 .banner h2 {
