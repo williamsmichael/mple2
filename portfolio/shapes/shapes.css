@@ -15,8 +15,23 @@ header + div {
 header + div p {
 	margin-bottom: 20px;
 }
-header + div p span {
-	text-transform: uppercase;
+.selected {
+	background-color: #337AB6;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius: 2px;
+}
+.congrats {
+	background-color: #5CB85C;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius: 2px;
+}
+.gameOver {
+	background-color: #D9534F;
+	color: #fff;
+	padding: 2px 7px;
+	border-radius: 2px;
 }
 .gray1 {
 	background-color: #888;

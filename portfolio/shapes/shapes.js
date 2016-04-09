@@ -114,7 +114,7 @@ buttonBegin.onclick = function() {
     document.getElementById('buttonBegin').style.display = "none";
 
     //begin interaction with the player
-    gameStatus.innerHTML = "How many <span>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Guess an answer in the box and press RETURN";
+    gameStatus.innerHTML = "How many <span class='selected'>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Guess an answer in the box and press RETURN";
 
     //display input guess box
     document.getElementById("inputField").style.display = "inline-block";
@@ -125,17 +125,17 @@ buttonBegin.onclick = function() {
 function verifier(playerGuess) {
     if (randNumGuesses > 0 && playerGuess !== shapeAmount) {
         if (playerGuess < shapeAmount) {
-            gameStatus.innerHTML = "Higher. Guess " + shape + " again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "Higher. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
         if (playerGuess > shapeAmount) {
-            gameStatus.innerHTML = "Lower. Guess " + shape + " again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "Lower. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
     }
 
     // remove shape not selected .container
-    function removeShape() {
+    function fadeShape() {
         if (shape === "circles") {
             $(".square").animate({opacity: '0.2'}, 1000);
         } else {
@@ -145,13 +145,13 @@ function verifier(playerGuess) {
 
     // final message to player
     if (randNumGuesses === 0 && playerGuess !== shapeAmount) {
-        gameStatus.innerHTML = "The number of " + shape + " equals " + shapeAmount + ". Game over " + name;
-        removeShape()
+        gameStatus.innerHTML = "The number of <span class='selected'>" + shape + "</span> equals <span class='selected'>" + shapeAmount + "</span>. <span class='gameOver'>Game over </span>";
+        fadeShape()
         restart();
     }
     if (playerGuess === shapeAmount) {
-        gameStatus.innerHTML = "Fantastic! You guessed it!";
-        removeShape()
+        gameStatus.innerHTML = "<span class='congrats'>Fantastic!</span> You guessed it!";
+        fadeShape()
         restart();
     }
 }
