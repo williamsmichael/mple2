@@ -33,6 +33,11 @@ header + div p {
 	padding: 2px 7px;
 	border-radius: 2px;
 }
+.glyphicon-arrow-up, .glyphicon-arrow-down {
+	color: #5BC0DE;
+	font-size: 1.5em;
+	vertical-align: bottom;
+}
 .gray1 {
 	background-color: #888;
 }
@@ -131,10 +136,10 @@ header + div p {
 	display: none;
 }
 #gameStatus {
-	margin-top: 20px;
+	margin-top: 25px;
 }
 footer {
-	margin-top: 100px;
+	margin-top: 75px;
 	text-align: center;
 }
 

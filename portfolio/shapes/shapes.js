@@ -125,11 +125,11 @@ buttonBegin.onclick = function() {
 function verifier(playerGuess) {
     if (randNumGuesses > 0 && playerGuess !== shapeAmount) {
         if (playerGuess < shapeAmount) {
-            gameStatus.innerHTML = "Higher. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "Higher <span class='glyphicon glyphicon-arrow-up' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
         if (playerGuess > shapeAmount) {
-            gameStatus.innerHTML = "Lower. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "Lower <span class='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
     }
