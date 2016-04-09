@@ -142,9 +142,9 @@ function verifier(playerGuess) {
     // fadeOut shape not selected from .container
     function fadeShape() {
         if (shape === "circles") {
-            $(".square").animate({opacity: '0.1'}, 1000);
+            $(".square").animate({opacity: '0.1'}, 2000);
         } else {
-            $(".circle").animate({opacity: '0.1'}, 1000);
+            $(".circle").animate({opacity: '0.1'}, 2000);
         }
     };
 
@@ -180,6 +180,7 @@ inputField.onkeypress = function(event) {
         verifier(playerGuess);
 
         $("input").blur(); //hide mobile device keyboard
+        $("header").focus() //set focus at top of page
         inputField.value = '';
         return false;
     } else return true;
