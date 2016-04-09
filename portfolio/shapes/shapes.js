@@ -137,7 +137,7 @@ function verifier(playerGuess) {
         }
     }
 
-    // remove shape not selected .container
+    // fadeOut shape not selected from .container
     function fadeShape() {
         if (shape === "circles") {
             $(".square").animate({opacity: '0.1'}, 1000);
@@ -177,6 +177,7 @@ inputField.onkeypress = function(event) {
         randNumGuesses--;
         verifier(playerGuess);
 
+        $("input").blur(); //hide mobile device keyboard
         inputField.value = '';
         return false;
     } else return true;
