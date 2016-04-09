@@ -115,6 +115,8 @@ buttonBegin.onclick = function() {
 
     //hide the begin button
     document.getElementById('buttonBegin').style.display = "none";
+    $("h1").hide()
+    $("#instructions").hide()
 
     //begin interaction with the player
     gameStatus.innerHTML = "<span class='badge'>" + randNumGuesses + "</span> chance(s)<br>How many <span class='selected'>" + shape + "</span> do you see...<br>Input a guess and press RETURN";
