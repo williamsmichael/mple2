@@ -1,6 +1,6 @@
 //set global variables
 var shape, shapeAmount;
-var instructions = document.getElementById('instructions');
+var gameStatus = document.getElementById('gameStatus');
 var container = document.getElementById('container');
 var buttonBegin = document.getElementById('buttonBegin');
 var inputField = document.getElementById('inputField');
@@ -114,7 +114,7 @@ buttonBegin.onclick = function() {
     document.getElementById('buttonBegin').style.display = "none";
 
     //begin interaction with the player
-    instructions.innerHTML = "How many <span>" + shape + "</span> do you see... " + randNumGuesses + " chance(s) <br> Input your answer in the box below";
+    gameStatus.innerHTML = "How many <span>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Guess an answer in the box and press RETURN";
 
     //display input guess box
     document.getElementById("inputField").style.display = "inline-block";
@@ -123,26 +123,22 @@ buttonBegin.onclick = function() {
 
 //function verify if the player's guess is correct
 function verifier(playerGuess) {
-    console.log(randNumGuesses);
-    console.log(playerGuess === shapeAmount);
     if (randNumGuesses > 0 && playerGuess !== shapeAmount) {
-        console.log('hi');
-        console.log(randNumGuesses);
         if (playerGuess < shapeAmount) {
-            instructions.innerHTML = "Higher. Guess " + shape + " again... " + randNumGuesses + " chance(s)";
+            gameStatus.innerHTML = "Higher. Guess " + shape + " again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
         if (playerGuess > shapeAmount) {
-            instructions.innerHTML = "Lower. Guess " + shape + " again... " + randNumGuesses + " chance(s)";
+            gameStatus.innerHTML = "Lower. Guess " + shape + " again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
             var playerGuess = parseInt(inputField.value, 10);
         }
     }
     if (randNumGuesses === 0 && playerGuess !== shapeAmount) {
-        instructions.innerHTML = "The number of " + shape + " equals " + shapeAmount + ". Game over " + name;
+        gameStatus.innerHTML = "The number of " + shape + " equals " + shapeAmount + ". Game over " + name;
         restart();
     }
     if (playerGuess === shapeAmount) {
-        instructions.innerHTML = "Fantastic! You guessed it!";
+        gameStatus.innerHTML = "Fantastic! You guessed it!";
         restart();
     }
 }
@@ -164,7 +160,6 @@ inputField.onkeypress = function(event) {
         //begin interactive guessing game
         randNumGuesses--;
         verifier(playerGuess);
-        console.log(playerGuess === shapeAmount);
 
         inputField.value = '';
         return false;
