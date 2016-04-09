@@ -16,10 +16,9 @@ header + div p {
 	margin-bottom: 20px;
 }
 .selected {
-	background-color: #337AB6;
-	color: #fff;
-	padding: 2px 7px;
-	border-radius: 2px;
+	text-decoration: underline;
+	color: #337AB6;
+	font-weight: 700;
 }
 .congrats {
 	background-color: #5CB85C;
@@ -140,9 +139,43 @@ header + div p {
 }
 #gameStatus {
 	margin-top: 25px;
+	line-height: 2em;
 }
 footer {
 	margin-top: 80px;
 	text-align: center;
+}
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+	header {
+		margin-top: 50px;
+	}
+	header + div {
+		width: 90%;
+	}
+	h1 {
+		font-size: 1.35em;
+	}
+	.circle, .square {
+		height: 30px;
+		width: 30px;
+		border: 3px solid #aaa;	
+		margin: 3px;
+	}
+	#buttonBegin, #buttonRestart, #inputField {
+		margin-top: 20px;
+		font-size: 1.25em;
+		width: 150px;
+	}
+	.glyphicon-arrow-up, .glyphicon-arrow-down {
+		color: #5BC0DE;
+		font-size: 1.25em;
+	}
+	footer {
+		padding: 15px;
+		margin: 20px;
+		font-size: 0.75em;
+	}
 }
 

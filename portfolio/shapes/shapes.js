@@ -117,7 +117,7 @@ buttonBegin.onclick = function() {
     document.getElementById('buttonBegin').style.display = "none";
 
     //begin interaction with the player
-    gameStatus.innerHTML = "How many <span class='selected'>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Input a guess in the box and press RETURN";
+    gameStatus.innerHTML = "<span class='badge'>" + randNumGuesses + "</span> chance(s)<br>How many <span class='selected'>" + shape + "</span> do you see...<br>Input a guess and press RETURN";
 
     //display input guess box
     document.getElementById("inputField").style.display = "inline-block";
@@ -128,11 +128,11 @@ buttonBegin.onclick = function() {
 function verifier(playerGuess) {
     if (randNumGuesses > 0 && playerGuess !== shapeAmount) {
         if (playerGuess < shapeAmount) {
-            gameStatus.innerHTML = "Higher <span class='glyphicon glyphicon-arrow-up' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "<span class='badge'>" + randNumGuesses + "</span> chance(s)<br>Higher <span class='glyphicon glyphicon-arrow-up' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again...";
             var playerGuess = parseInt(inputField.value, 10);
         }
         if (playerGuess > shapeAmount) {
-            gameStatus.innerHTML = "Lower <span class='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again... <span class='badge'>" + randNumGuesses + "</span> chance(s)";
+            gameStatus.innerHTML = "<span class='badge'>" + randNumGuesses + "</span> chance(s)<br>Lower <span class='glyphicon glyphicon-arrow-down' aria-hidden='true'></span>. Guess <span class='selected'>" + shape + "</span> again...";
             var playerGuess = parseInt(inputField.value, 10);
         }
     }
@@ -140,15 +140,15 @@ function verifier(playerGuess) {
     // remove shape not selected .container
     function fadeShape() {
         if (shape === "circles") {
-            $(".square").animate({opacity: '0.2'}, 1000);
+            $(".square").animate({opacity: '0.1'}, 1000);
         } else {
-            $(".circle").animate({opacity: '0.2'}, 1000);
+            $(".circle").animate({opacity: '0.1'}, 1000);
         }
     };
 
     // final message to player
     if (randNumGuesses === 0 && playerGuess !== shapeAmount) {
-        gameStatus.innerHTML = "The number of <span class='selected'>" + shape + "</span> equals <span class='selected'>" + shapeAmount + "</span>. <span class='gameOver'>Game over </span>";
+        gameStatus.innerHTML = "The number of <span class='selected'>" + shape + "</span> equals <span class='selected'>" + shapeAmount + "</span><br><span class='gameOver'>Game over </span>";
         fadeShape()
         restart();
     }
