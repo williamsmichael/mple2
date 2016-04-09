@@ -95,8 +95,8 @@ buttonBegin.onclick = function() {
                     break;
             }
 
-            var el = document.getElementById('container');
-            el.appendChild(div);
+            var board = document.getElementById('container');
+            board.appendChild(div);
         }
     }
     shapeCreate();
@@ -133,12 +133,23 @@ function verifier(playerGuess) {
             var playerGuess = parseInt(inputField.value, 10);
         }
     }
+
+    // remove shape not selected .container
+    function removeShape() {
+        if (shape === "circles") {
+            $(".square").fadeOut(1000); 
+        } else $(".circle").fadeOut(1000);
+    };
+
+    // final message to player
     if (randNumGuesses === 0 && playerGuess !== shapeAmount) {
         gameStatus.innerHTML = "The number of " + shape + " equals " + shapeAmount + ". Game over " + name;
+        removeShape()
         restart();
     }
     if (playerGuess === shapeAmount) {
         gameStatus.innerHTML = "Fantastic! You guessed it!";
+        removeShape()
         restart();
     }
 }
