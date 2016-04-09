@@ -137,8 +137,10 @@ function verifier(playerGuess) {
     // remove shape not selected .container
     function removeShape() {
         if (shape === "circles") {
-            $(".square").fadeOut(1000); 
-        } else $(".circle").fadeOut(1000);
+            $(".square").animate({opacity: '0.2'}, 1000);
+        } else {
+            $(".circle").animate({opacity: '0.2'}, 1000);
+        }
     };
 
     // final message to player
