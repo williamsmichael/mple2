@@ -61,7 +61,7 @@ buttonBegin.onclick = function() {
             div.className = arrayRandomized[i];
 
             //call random number for color of the shape
-            var colorType = randNum(10);
+            var colorType = randNum(11);
             switch (colorType) {
                 case (1):
                     div.className += " gray1";
@@ -85,12 +85,15 @@ buttonBegin.onclick = function() {
                     div.className += " blue2";
                     break;
                 case (8):
-                    div.className += " purple";
+                    div.className += " blue3";
                     break;
                 case (9):
-                    div.className += " yellow";
+                    div.className += " purple";
                     break;
                 case (10):
+                    div.className += " yellow";
+                    break;
+                case (11):
                     div.className += " orange";
                     break;
             }
@@ -114,7 +117,7 @@ buttonBegin.onclick = function() {
     document.getElementById('buttonBegin').style.display = "none";
 
     //begin interaction with the player
-    gameStatus.innerHTML = "How many <span class='selected'>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Guess an answer in the box and press RETURN";
+    gameStatus.innerHTML = "How many <span class='selected'>" + shape + "</span> do you see... <span class='badge'>" + randNumGuesses + "</span> chance(s) <br> Input a guess in the box and press RETURN";
 
     //display input guess box
     document.getElementById("inputField").style.display = "inline-block";

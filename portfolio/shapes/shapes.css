@@ -51,13 +51,16 @@ header + div p {
 	background-color: #66CC99;
 }
 .red1 {
-	background-color: #FF3333;
+	background-color: #E64A45;
 }
 .blue1 {
 	background-color: #66CCCC;
 }
 .blue2 {
 	background-color: #669999;
+}
+.blue3 {
+	background-color: #4DB3B3;
 }
 .purple {
 	background-color: #6666CC;
@@ -79,7 +82,7 @@ header + div p {
 	border-radius: 50%;
 }
 #buttonBegin, #buttonRestart, #inputField {
-	margin-top: 30px;
+	margin-top: 25px;
 	border: 3px solid #bbb;
 	border-radius: 5px;
 	background-color: #bbb;
@@ -139,7 +142,7 @@ header + div p {
 	margin-top: 25px;
 }
 footer {
-	margin-top: 75px;
+	margin-top: 80px;
 	text-align: center;
 }
 
