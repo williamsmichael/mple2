@@ -26,6 +26,9 @@
     <link href="css/resume.css" rel="stylesheet" type="text/css">
     <link href="css/landing-page.css" rel="stylesheet">
 
+    <!-- Unslider.com -->
+    <link href="css/unslider.css" rel="stylesheet" type="text/css"> 
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -81,13 +84,21 @@
             <div class="row">
 
                 <!-- Corner Ribbon -->
-                <div class="corner-ribbon top-right blue hidden-xs">Welcome!</div>
+                <div class="corner-ribbon top-right red hidden-xs">Happy Holidays!</div>
 
                 <div class="col-lg-12">
                     <div class="intro-message">
+
                         <h1>Michael Williams</h1>
-                        <h2>analyst. developer. learner.</h2>
                         <h3>making peoples lives easier</h3>
+                        <div class="vertical-slider">
+                            <ul>
+                                <li><h2>analyst.</h2></li>
+                                <li><h2>developer.</h2></li>
+                                <li><h2>learner.</h2></li>
+                            </ul>
+                        </div>
+                        
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -598,7 +609,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>connect to Michael:</h2>
+                    <h2>connect</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
@@ -649,6 +660,20 @@
     <!-- core scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- unslider.com -->
+    <script src="js/unslider-min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.vertical-slider').unslider({
+                animation: 'vertical',
+                autoplay: true,
+                infinite: true,
+                nav: false,
+                arrows: false
+            });
+        });
+    </script>
 
 </body>
 </html>
