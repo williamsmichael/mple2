@@ -1,16 +1,5 @@
-/* ------------------------------------------------------------------layout */
-.intro-message h4 {
-	margin: 10px !important;
-}
-.div-img-btn {
-    text-align: center;
-}
-.btn-group, .portfolio-btn {
-	margin-top: 20px;
-}
-img[alt~="Screenshot"] {
-	margin-top: 25px;
-}
+/* custom add ons to the landing landing-page
+unless stated in its own separate stylesheet */
 
 /* ------------------------------------------------------------------ribbon */
 .corner-ribbon {
@@ -27,7 +16,7 @@ img[alt~="Screenshot"] {
 	-webkit-transform: rotate(-45deg);
 	z-index: 1;
 }
-/* Custom styles */
+/* Custom styles for the default ribbon */
 .corner-ribbon.sticky {
  	position: fixed;
 }
@@ -57,35 +46,4 @@ img[alt~="Screenshot"] {
 	margin-top: 20px;
 	margin-bottom: 5px;
 	color: #FEC006;
-}
-
-/* ------------------------------------------------------------------resume */
-#name h1 {
-	margin-bottom: 3px;
-}
-#name h2 {
-	margin-bottom: 15px;
-}
-#resume p {
-	/* line-height: 135%; */
-}
-p.subDetails {
-	margin-top: 7.5px;
-}
-#resume-footer {
-	border-top: 1px solid #dedede;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	font-size: 2em;
-	text-align: center;
-	background-color: inherit;
-}
-@media all and (max-width: 480px) {
-	#resume h1 {
-		margin-bottom: 10px;
-		line-height: 105%;
-	}
-	#resume h2 {
-		line-height: 110%;
-	}
 }

@@ -145,13 +145,26 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+/* ------------------------------------------------------------------custom */
+.intro-message h4 {
+    margin: 10px !important;
+}
+.div-img-btn {
+    text-align: center;
+}
+.btn-group, .portfolio-btn {
+    margin-top: 20px;
+}
+img[alt~="Screenshot"] {
+    margin-top: 25px;
+}
+
 /* hide icon social media buttons */
 ul.show-buttons {
     display: none;
 }
 
-
-/* media queries */
+/* ------------------------------------------------------------------media queries */
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
@@ -162,6 +175,10 @@ ul.show-buttons {
 @media(max-width:767px) {
 
     /* header */
+    .intro-header .container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     .intro-message {
         padding-bottom: 0;
     }
