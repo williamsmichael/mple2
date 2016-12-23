@@ -37,7 +37,9 @@ h6 {
     text-align: center;
     color: #f8f8f8;
     /* background: url(../img/intro-bg.jpg) no-repeat center center; */
-    background-image: radial-gradient(#5F7C8A, #222);
+    /* background-image: radial-gradient(#5F7C8A, #222); */
+    background: url(../img/noisy-texture.png);
+    background-color: #4B5F68;
 }
 
 .intro-message {
@@ -48,7 +50,7 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); */
     font-size: 5em;
 }
 
@@ -59,7 +61,7 @@ h6 {
 }
 
 .intro-message > h2, .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); */
 }
 
 .intro-message > h3 {
@@ -131,12 +133,14 @@ h6 {
     color: #f8f8f8;
     /* background: url(../img/banner-bg.jpg) no-repeat center center; */
     /* background-size: cover; */
-    background-image: radial-gradient(circle at top left, #5F7C8A, #222);
+    /* background-image: radial-gradient(circle at top left, #5F7C8A, #222); */
+    background: url(../img/noisy-texture.png);
+    background-color: #4B5F68;
 }
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); */
     font-size: 3em;
 }
 
@@ -159,7 +163,7 @@ h6 {
 @media(max-width:767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+        /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); */
         font-size: 3em;
     }
     ul.banner-social-buttons > li {
