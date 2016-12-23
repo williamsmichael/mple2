@@ -45,7 +45,7 @@ h6 {
 .intro-message {
     position: relative;
     padding-top: 15%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
 }
 
 .intro-message > h1 {
@@ -78,26 +78,6 @@ h6 {
 
 .btn-group a:nth-child(2) {
     width: 125.328px;
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-    .intro-divider {
-        width: 100%;
-    }
 }
 
 .network-name {
@@ -153,6 +133,25 @@ h6 {
     margin-top: 0;
 }
 
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+footer ul {
+    margin-bottom: 35px;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+/* hide icon social media buttons */
+ul.show-buttons {
+    display: none;
+}
+
+
+/* media queries */
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
@@ -161,26 +160,55 @@ h6 {
 }
 
 @media(max-width:767px) {
+
+    /* header */
+    .intro-message {
+        padding-bottom: 0;
+    }
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+    .intro-divider {
+        width: 100%;
+    }
+
+    /* banner */
     .banner h2 {
         margin: 0;
         /* text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6); */
         font-size: 3em;
     }
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
+    div.banner {
+        text-align: center;
     }
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
+    ul.banner-social-buttons {
+        margin: 0 auto;
+        width: 100%;
     }
-}
+    ul.banner-social-buttons > li:first-child {
+        padding-left: 0;
+    }
+    ul.show-buttons li {
+        display: inline-block;
+        padding: 5px;
+    }
+    ul.show-buttons a {
+        font-size: 3em;
+        color: #f8f8f8;
+    }
+    ul.show-buttons a:hover {
+        color: #FEC006;
+    }
 
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
+    /* swap social media button sizes */
+    ul.hide-buttons {
+        display: none;
+    }
+    ul.show-buttons {
+        display: initial;
+    }
 
-p.copyright {
-    margin: 15px 0 0;
+    footer {
+        text-align: center;
+    }
 }
