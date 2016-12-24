@@ -221,10 +221,10 @@ p.subDetails {
 
 	#resume h1 {
 		margin-bottom: 10px;
-		line-height: 105%;
+		line-height: 1.1;
 	}
 	#resume h2 {
-		line-height: 110%;
+		line-height: 1.2;
 	}
 
     /* .content-section-b */
@@ -252,10 +252,6 @@ p.subDetails {
 	-moz-column-count: 1;
 	-webkit-column-count: 1;
 	column-count: 1;
-	}
-	#name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
 	}
 }
 
