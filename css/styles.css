@@ -19,7 +19,6 @@ unless stated in its own separate stylesheet */
 /* Custom styles for the default ribbon */
 .corner-ribbon.sticky {
  	position: fixed;
-
 }
 .corner-ribbon.shadow {
  	box-shadow: 0 0 3px rgba(0,0,0,.3);
@@ -61,8 +60,7 @@ unless stated in its own separate stylesheet */
   width: 22px;
   transition: all 0.2s;
 }
-/* animation */
-.navbar-toggle .top-bar {
+/* .navbar-toggle .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
 }
@@ -73,7 +71,6 @@ unless stated in its own separate stylesheet */
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
 }
-
 .navbar-toggle.collapsed .top-bar {
   transform: rotate(0);
 }
@@ -83,3 +80,4 @@ unless stated in its own separate stylesheet */
 .navbar-toggle.collapsed .bottom-bar {
   transform: rotate(0);
 }
+ */
