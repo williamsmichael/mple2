@@ -48,36 +48,39 @@ unless stated in its own separate stylesheet */
 }
 
 /* -----------------------------------------------animated x top navigation */
-/* https://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/ */
+/* http://stackoverflow.com/questions/37758887/animated-x-icon-for-bootstrap-toggle */
 .navbar-toggle {
-  border: none;
-  background: transparent !important;
+	border: none;
+	background: transparent !important;
 }
 .navbar-toggle:hover {
-  background: transparent !important;
+	background: transparent !important;
 }
 .navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
+	width: 22px;
+	transition: all 0.2s;
 }
-/* .navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
 }
 .navbar-toggle .middle-bar {
-  opacity: 0;
+	opacity: 0;
 }
 .navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
 }
 .navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
+	transform: rotate(0);
 }
 .navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
+	opacity: 1;
 }
 .navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
+	transform: rotate(0);
 }
- */
+
+
+
+
