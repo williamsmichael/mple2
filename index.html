@@ -84,7 +84,7 @@
             <div class="row">
 
                 <!-- Corner Ribbon -->
-                <div class="corner-ribbon top-right red hidden-xs">Happy Holidays!</div>
+                <div id="message" class="corner-ribbon top-right hidden-xs blue"></div>
 
                 <div class="col-lg-12">
                     <div class="intro-message">
@@ -96,6 +96,14 @@
                                 <li><h2>analyst.</h2></li>
                                 <li><h2>developer.</h2></li>
                                 <li><h2>learner.</h2></li>
+                                <!-- <li><h2>data analyst.</h2></li>
+                                <li><h2>business analyst.</h2></li>
+                                <li><h2>web developer.</h2></li>
+                                <li><h2>python developer.</h2></li>
+                                <li><h2>javascript developer.</h2></li>
+                                <li><h2>sql developer.</h2></li>
+                                <li><h2>agile developer.</h2></li>
+                                <li><h2>lifelong learner.</h2></li> -->
                             </ul>
                         </div>
                         
@@ -694,6 +702,28 @@
     <!-- core scripts -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- welcome message ribbon -->
+    <script type="text/javascript">
+        // source: https://teamtreehouse.com/community/simple-jquery-question
+        function welcomeMessage() {
+        var now = new Date();
+        var hours = now.getHours();
+        var msg;
+        
+        if (hours < 12)
+            msg = "Good Morning";
+        else if (hours < 18)
+            msg = "Good Afternoon";
+        else if (hours < 23)
+            msg = "Good Evening";
+        else
+            msg = "Whoa, Night Owl";
+        $('#message').html(msg);  //add message to the element with class message
+        }
+    
+        welcomeMessage();
+    </script>
 
     <!-- unslider.com -->
     <script src="js/unslider-min.js"></script>

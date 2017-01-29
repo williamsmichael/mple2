@@ -11,7 +11,7 @@ unless stated in its own separate stylesheet */
 	text-align: center;
 	line-height: 50px;
 	letter-spacing: 1px;
-	color: #fff;
+	color: #eee;
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 	z-index: 1;
@@ -19,6 +19,7 @@ unless stated in its own separate stylesheet */
 /* Custom styles for the default ribbon */
 .corner-ribbon.sticky {
  	position: fixed;
+
 }
 .corner-ribbon.shadow {
  	box-shadow: 0 0 3px rgba(0,0,0,.3);
@@ -34,16 +35,15 @@ unless stated in its own separate stylesheet */
     background: #4BAE4F;
 }
 .corner-ribbon.blue {
-	background: #6699CC;
+	background: #3DB6D1;
 }
-
 .corner-ribbon.red {
 	background: #D9534F;
 }
 
 /* ------------------------------------------------------------------slider */
 .vertical-slider {
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 5px;
 	color: #FEC006;
 }
