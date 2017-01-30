@@ -187,7 +187,7 @@ ul.show-buttons {
         font-size: 3em;
     }
     .intro-divider {
-        width: 80%;
+        width: 95%;
     }
 
     /* banner */
@@ -224,6 +224,11 @@ ul.show-buttons {
     }
     ul.show-buttons {
         display: initial;
+    }
+
+    /* vertical-slider */
+    .vertical-slider {
+        margin-top: 20px;
     }
 
     footer {
